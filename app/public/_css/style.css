@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px 20px; /* Ajuste para garantir espaço interno */
+
+}
+
+.nav-item:hover {
+  background: #590219; /* Cor de fundo ao passar o mouse */
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+  color: white;
+}
+
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #590219 , #BF0436);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(1.25rem - 3px) calc(1.5rem - 3px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.button-branco {
+  align-items: center;
+  background-color: #fcfcfc;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-branco:hover,
+.button-branco:focus { 
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* section {
+  overflow-x: hidden;
+} */
+
+#linha {
+  width: 100%;
+  border-bottom: 2px solid   black;
+}
+
+#linha2 {
+  width: 55%;
+  border-bottom: 2px solid   black;
+}
+
+@media (max-width: 1024px) {
+  #linha2 {
+    width: 100%;
+  }
+}
+
+/* CSS */
+.button-57 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #7a1931;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 40px;
+  padding-right: 45px;  
+  background-color: #00000000;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  min-height: 48px;
+  line-height: 1.29;
+  color: #7a1931;
+  font-weight: 400;
+  transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+}
+
+.button-57:hover {
+    background-color: #7a1931;
+    color: #fff;
+}
+
+.button-58 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #7a1931;
+  text-align: left;
+  vertical-align: top; 
+  background-color: #00000000;
+  font-size: 14px;
+  letter-spacing: 0.16px;
+  min-height: 48px;
+  line-height: 1.29;
+  color: #7a1931;
+  font-weight: 400;
+  transition: background 70ms cubic-bezier(0,0,.38,.9),box-shadow 70ms cubic-bezier(0,0,.38,.9),border-color 70ms cubic-bezier(0,0,.38,.9),outline 70ms cubic-bezier(0,0,.38,.9);
+}
+
+.button-58:hover {
+    background-color: #7a1931;
+    color: #fff;
+}
+
+/* Se a tela for maior que 1024px (por exemplo, um tablet ou desktop) */
+@media (min-width: 1024px) {
+  .dynamic-padding {
+    padding-left: 20vh;
+  }
+}
+
+/* Se a tela for menor que 1024px (por exemplo, um celular) */
+@media (max-width: 1023px) {
+  .dynamic-padding {
+    padding-left: 0;
+  }
+}
+
+@font-face {
+  font-family: PrimeiraFonte;
+  src: url("./_font/Bastine/Bastine.ttf")
+}
+
+.PrimeiraFonte {
+  font-family: PrimeiraFonte;
+}
+
+section {
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+  #inicio {
+    padding-left: 0vh; /* Ajuste para telas de celular */
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+.carousel-inner {
+  height: 450px; /* Define a altura total do carousel */
+}
+
+.carousel-item img {
+  height: 90%;
+   /* Faz com que as imagens ocupem 100% da altura do slide */
+   /* Ajusta a imagem para cobrir o espaço sem distorção */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  #logo {
+    width: 250px; /* Largura reduzida para telas menores */
+  }
+  
+}
+
+.vertical-line {
+  position: absolute; /* Mantém a linha fixa no layout */
+  top: 0; /* Começa no topo */
+  left: 8%; /* Ajuste para alinhar com o layout */
+  width: 2px; /* Largura da linha */
+  height: 60vh; /* Altura igual a metade da página */
+  background-color: #590219; /* Cor da linha */
+  z-index: 1; /* Coloca a linha abaixo de outros elementos se necessário */
+}
+@media (max-width: 576px) {
+  .vertical-line {
+    height: 30vh; /* Altura reduzida em telas menores */
+    left: 5%; /* Ajuste para alinhar com o layout */
+  }
+}
+
+.vertical-line-right {
+  position: absolute;
+  bottom: 0; /* Começa na parte inferior da página */
+  right: 5%; /* Ajuste para alinhar com o layout */
+  width: 2px;
+  height: 50vh; /* Altura igual a metade da página */
+  background-color: #590219;
+  z-index: 1;
+}
+/* Ajuste para telas menores */
+@media (max-width: 576px) {
+  .vertical-line-right {
+    height: 20vh; /* Altura reduzida em telas menores */
+    bottom: 29%; /* Começa na parte inferior da página */
+  }
+}
+
+.image-container {
+  position: relative; /* Define o contêiner como referência para os botões */
+  display: inline-block; /* Mantém o tamanho baseado no conteúdo */
+}
+
+.blur-button {
+  position: absolute; /* Posiciona em relação ao contêiner */
+  width: 200px; /* Largura do botão */
+  height: 100px; /* Altura do botão */
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido para visualização */
+  border: none; /* Sem bordas */  
+  cursor: default;
+  backdrop-filter: blur(8px); /* Aplica o efeito de desfoque */
+  -webkit-backdrop-filter: blur(8px); /* Suporte para navegadores WebKit */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra para destaque */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Animação suave */
+  pointer-events: none; /* Desativa todas as interações do mouse */
+}
+
+.blur-button:hover {
+  transform: scale(1.1); /* Ampliar ligeiramente no hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Realça o fundo */
+}
+@media (max-width: 576px) {
+  .blur-button {
+    display: none;
+  }
+}
+
+.alinhamentoBasico {
+  padding-left: 30vh;
+}
+@media (max-width: 840px) {
+  .alinhamentoBasico {
+    padding-left: 8vh;
+  }
+}
+
+.alinhamentoRoteiro {
+  padding-top: 10vh;
+}
+@media (max-width: 840px) {
+  .alinhamentoRoteiro {
+    padding-top: 0vh;
+  }
+  #primeiraSecao {
+    padding-top: 10vh;
+  }
+}
+
+.alinhamentoCarrossel {
+  padding-right: 10%;
+  padding-left: 20%;
+}
+@media (max-width: 840px) {
+  .alinhamentoCarrossel {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 840px) {
+  #prato {
+    display: none;
+  }
+  #anilhas {
+    display: none;
+  }
+}
+
+
+#prato1 {
+  max-width:400px;
+}
+
+#myCarrousel {
+  height: auto;
+}
+
+#tituloConstrua {
+  display: none
+}
+
+#botaoCelular {
+  display: none
+}
+
+.fonteGigante {
+  font-size: 90px;
+  line-height: 80px;
+}
+
+.fonteTexto{
+  font-size: 23px;
+  line-height: 26px;
+}
+
+@media (max-width: 840px) {
+  .fonteGigante {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .fonteTexto{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  #tituloConstrua {
+    display: block
+  }
+  #tituloConstrua1 {
+    display: none
+  }
+  #botaoCelular {
+    display: block
+  }
+  #prato1 {
+    max-width:300px;
+  }
+  #plano {
+    padding-left: 5vh;
+  }
+}
+
+.paddingEnd {
+  padding-right: 10vh;
+}
+
+.paddingNumeros {
+  padding-left: 20%;
+}
+
+.fonteQuem {
+  font-size: 32px; 
+  line-height: 38px;
+  color: #590219
+}
+@media (max-width: 840px) {
+  .fonteQuem {
+    font-size: 22px; 
+    line-height: 22px;
+  }
+  .paddingEnd {
+    padding-right: 0vh;
+  }
+  .paddingNumeros {
+    padding-left: 0%;
+  }
+  
+}
+
+#figurinhasBotao {
+  height: 35px; 
+  padding-right: 10px;
+}
+
+#imagemQuem {
+  margin-left: 10vh;
+  max-height: 500px;
+}
+
+
+@media (max-width: 840px) {
+  .alinhamentoQuem {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: -12rem;
+    padding-top: 10rem;
+  }
+  #alinhamentoQuem1 {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-top: 10rem
+  }
+  #imagemQuem {
+    margin-left: 0vh;
+    max-height: 350px;
+  }
+  #imagemQuem1 {
+    margin-left: 10vh;
+    max-height: 350px;
+  }
+  #figurinhasBotao {
+    height: 20px; 
+    padding-right: 10px;
+  }
+}
+.vantagensCard {
+  background-image: linear-gradient(to bottom left, #E8D6B2, #DABE85); 
+  height: 100%; 
+  border-radius: 10%; 
+  border: none; 
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 18rem;
+  margin-right: 20px;
+}
+#larguraCards2 {
+  margin-top: 10vh;
+}
+
+.cardTitulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.cardTexto {
+  font-size: 20px; 
+  font-weight:300
+}
+
+#suporte {
+  width: 100%; max-width: 80px; height: auto; padding: 10px;
+}
+#panela {
+  width: 100%; max-width: 90px; height: auto; padding: 10px;
+}
+#celular {
+  width: 100%; max-width: 60px; height: auto; padding: 10px;
+}
+
+@media (max-width: 840px) {
+  #larguraCards {
+    margin-left: 2vh;
+    margin-top: 5vh;
+  }
+  #larguraCards2 {
+    margin-left: 2vh;
+    margin-top: 5vh;
+  }
+  .cardTitulo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .cardTexto {
+    font-size: 12px; 
+    font-weight:300
+  }  
+  .vantagensCard {
+    background-image: linear-gradient(to bottom left, #E8D6B2, #DABE85); 
+    width: 45%;
+    border-radius: 10%;
+    border: none; 
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 18rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  #suporte {
+    width: 100%; max-width: 70px; height: auto; padding: 10px;
+  }
+  #panela {
+    width: 100%; max-width: 80px; height: auto; padding: 10px;
+  }
+  #celular {
+    width: 100%; max-width: 50px; height: auto; padding: 10px;
+  }
+  
+}
+
+.button-6 {
+  align-items: center;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #DABE85 , #F7EACF);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(1.25rem - 3px) calc(1.5rem - 3px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+  pointer-events: none; /* Desativa todas as interações do mouse */
+}
+
+.button-6:hover,
+.button-6:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+  .button-6 {
+    font-size: 14px; /* Tamanho menor para telas pequenas */
+    padding: 0.75rem 1rem; /* Ajustar padding para manter proporção */
+    min-height: 2.5rem; /* Reduz altura mínima */
+    width: 150px;
+    height: 50px;
+  }
+}
+
+.linhaVantagens {
+  position: absolute;
+  bottom: -5vh; /* Posição padrão */
+}
+
+/* Ajustar para telas menores */
+@media (max-width: 850px) {
+  .linhaVantagens {
+    bottom: 10%; /* Ajuste para telas menores */
+    padding-left: 10%;
+  }
+}
+
+/* Estilo padrão: linha não visível */
+.responsive-line {
+  display: none;
+}
+
+/* Aparece apenas em telas menores */
+@media (max-width: 576px) {
+  .responsive-line {
+    display: block;
+    border: 0;
+    height: 45px; /* Espessura da linha */
+    background-image: linear-gradient(to right, #590219 , #BF0436); /* Cor da linha */
+    margin: 0 1rem; /* Espaçamento superior e inferior */
+    position: absolute;
+    bottom: 9rem;
+    opacity: 1;
+  }
+}
+
+
+.button-7 {
+  align-items: center;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #DABE85 , #F7EACF);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 20;
+  min-height: 3rem;
+  padding: calc(1.25rem - 10px) calc(1.5rem - 10px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  pointer-events: none; /* Desativa todas as interações do mouse */
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-7:hover {
+  transform: translateY(-1px);
+}
+
+.button-7:active {
+
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.button-8 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #DABE85;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra à esquerda e embaixo */
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 20;
+  min-height: 3rem;
+  padding: calc(1.25rem - 10px) calc(1.5rem - 10px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  pointer-events: none; /* Desativa todas as interações do mouse */
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-8:hover {
+  transform: translateY(-1px);
+}
+
+.button-8:active {
+
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.move-out {
+  position: relative;
+  right: -50%; /* Move 2/3 do botão para fora */
+}
+
+.move-in {
+  position: relative;
+  left: -20%; /* Move 2/3 do botão para fora */
+}
+
+.no-wrap {
+  display: flex;
+  flex-wrap: nowrap; /* Impede quebra de linha */
+}

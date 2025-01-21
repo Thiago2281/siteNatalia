@@ -1,0 +1,21 @@
+// custom variable values
+$primary: yellow;
+$danger: black;
+$navbar-light-hover-color: white;
+
+// import the functions & variables
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+// custom theme colours
+$custom-theme-colors: (
+  "especial": #070d23,
+  "altdark": #522192
+);
+
+// merge the maps to add new theme colors
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
