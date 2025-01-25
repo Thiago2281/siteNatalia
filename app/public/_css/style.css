@@ -185,17 +185,24 @@
   src: url("./_font/Bastine.ttf")
 } */
 
+/* .merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+/* 
 @font-face {
   font-family: PrimeiraFonte;
   src: url('bastine-webfont.woff2') format('woff2'),
        url('bastine-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
-}
+} */
 
 .PrimeiraFonte {
-  font-family: PrimeiraFonte;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 section {
@@ -360,7 +367,7 @@ html, body {
 }
 
 .fonteGigante {
-  font-size: 90px;
+  font-size: 80px;
   line-height: 80px;
 }
 
