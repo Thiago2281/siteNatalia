@@ -6,6 +6,7 @@ require('dotenv').config();
 const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 /* identificar dados passados na URL */
 app.use(bodyParser.urlencoded({ extended: false }))
+const whatsappNumber = process.env.WHATSAPP_NUMBER;
 
 /* padronizar a pasta public como base para acessar imagens e outros dados */
 app.use(express.static('public'));
@@ -14,7 +15,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index', { googleMapsApiKey: apiKey });
+  res.render('index', { googleMapsApiKey: apiKey, whatsappNumber: whatsappNumber });
 })
 
 app.listen(port, () => {

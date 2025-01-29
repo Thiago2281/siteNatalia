@@ -19,35 +19,35 @@
   <div style="background-image: url(./_img/background.png); background-size: cover;">
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="nav-link" id="prato" href="#" style="padding-left: 10%; color: #590219"><strong>Natália Campos</strong></a>
+        <a class="nav-link" id="prato" href="#" style="padding-left: 15%; color: #590219"><strong>Natália Campos</strong></a>
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 10%;">
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">Hub</a>
+              <a class="nav-link" href="#inicio">Hub</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#psicoterapia">Feedbacks</a>
+              <a class="nav-link" href="#feedbacks">Feedbacks</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#sobre">Roteiro</a>
+              <a class="nav-link" href="#roteiroMudanca">Roteiro</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#faq">Sobre</a>
+              <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#faq">Beneficios</a>
+              <a class="nav-link" href="#vantagens">Beneficios</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#faq">Planos</a>
+              <a class="nav-link" href="#plano">Planos</a>
             </li>
           </ul>
           <span class="navbar-text pe-2">
-            <a class="nav-link" href="./_img/termos de uso.txt"><img src="./_img/whatsapp.png" alt="" id="xxx" style="height: 23px"></a></span>
-            <span class="navbar-text" style="padding-right: 10%;">
-            <a class="nav-link" href="./_img/termos de uso.txt"><img src="./_img/insta.png" alt="" id="xxx" style="height: 23px"></a>
+            <a class="nav-link" id="whatsapp-link" href="https://wa.me/<%= whatsappNumber %>"><img src="./_img/whatsapp.png" alt="" style="height: 32px"></a></span>
+          <span class="navbar-text" style="padding-right: 10%;">  
+            <a class="nav-link" href="./_img/termos de uso.txt"><img src="./_img/insta.png" alt="" style="height: 32px"></a>
           </span>
         </div>
       </div>
@@ -64,8 +64,8 @@
               <h1 class="mt-5 PrimeiraFonte fonteGigante" id="tituloConstrua" style="color: #590219">Construa <span style="color:#DABE85;"> a sua</span> melhor versão<br></h1>
               <p class="pb-5 fonteTexto" style="color: #590219"><br>Acompanhamento nutricional personalizado para alcançar seus objetivos. Com suporte personalizado, realizar seus sonhos é mais fácil do que nunca.</p>
               <div class="pb-5 dynamic-padding">
-                <a href="#sobre">
-                <button class="button-5" role="button">Agendar consulta<img src="./_img/whatsbranco.png" alt="" id="xxx" style="height: 23px; padding-left: 10px;"></button>
+                <a id="whatsapp-link" href="https://wa.me/<%= whatsappNumber %>">
+                <button class="button-5" role="button">Agendar consulta<img src="./_img/whatsbranco.png" alt="" style="height: 23px; padding-left: 10px;"></button>
                 </a>
               </div>
             </div>
@@ -114,7 +114,7 @@
       </div>      
     </div>
   </div>
-  <section style="background-color:#FFEEEE;">    
+  <section style="background-color:#FFEEEE;" id="feedbacks">    
     <div class="" >
       <div class="row ">
         <div class="col-md-3"></div>
@@ -126,13 +126,13 @@
       </div>
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div id="myCarrousel" class="carousel-inner" style="color: #590219;">
-          <div class="carousel-item active px-5" data-bs-interval="10000">
-            <div class="row">
-              <div class="col-md">
-                <img src="./_img/feedback1.png" class="d-block w-100" style="padding-left: 15%;" alt="...">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="row alinhamentoCarrossel">
+              <div class="col-md ">
+                <img src="./_img/feedback1.png" class="imgCarrossel d-block mw-100" style="padding-left: 15%;" alt="...">
               </div>
               <div class="col-md">
-                <div class="alinhamentoCarrossel">
+                <div class="">
                   <p>O paciente buscou Acompanhamento como o objetivo de mudar seus hábitos de vida, relatando indisposição. Começou com um peso inicial de 134kg. Com o acompanhamento contínuo, houve um aumento na massa magra e redução da gordura corporal, atingindo 117kg.</p>
                   <h1>-17,3 kg</h1>
                   <img src="./_img/grafico1.png" style="max-height:120px;">
@@ -140,13 +140,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item px-5" data-bs-interval="2000">
-            <div class="row">
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="row alinhamentoCarrossel">
               <div class="col-md">
-                <img src="./_img/feedback2.png" class="d-block w-100" style="padding-left: 15%;" alt="...">
+                <img src="./_img/feedback2.png" class="imgCarrossel d-block mw-100" style="padding-left: 15%;" alt="...">
               </div>
               <div class="col-md" >
-                <div class="alinhamentoCarrossel">
+                <div class="">
                   <p>A paciente iniciou o acompanhamento com queixas de indisposição e fadiga, apresentando um peso inicial de 75kg. Após 6 meses de acompanhamento nutricional, alcançou um peso de 60kg, com melhorias significativas na disposição e aumento da massa muscular.</p>
                   <h1>-15,1 kg</h1>
                   <img src="./_img/grafico2.png" style="max-height:120px;">
@@ -154,13 +154,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item px-5">
-            <div class="row">
+          <div class="carousel-item">
+            <div class="row alinhamentoCarrossel">
               <div class="col-md">
-                <img src="./_img/feedback3.png" class="d-block w-100" style="padding-left: 15%;" alt="...">
+                <img src="./_img/feedback3.png" class="imgCarrossel d-block mw-100" style="padding-left: 15%;" alt="...">
               </div>
               <div class="col-md" >
-                <div class="alinhamentoCarrossel">
+                <div class="">
                   <p>Queixas de fadiga, baixa qualidade de vida e um percentual elevado de gordura aliado a pouca massa muscular. Com o acompanhamento focado na hipertrofia, obtivemos um ganho de 7kg de massa muscular, melhorando significativamente sua composição corporal e bem-estar.</p>
                   <h1>+7,2 kg</h1>
                   <img src="./_img/grafico3.png" style="max-height:120px;">
@@ -168,13 +168,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item px-5">
-            <div class="row">
+          <div class="carousel-item">
+            <div class="row alinhamentoCarrossel">
               <div class="col-md">
-                <img src="./_img/feedback4.png" class="d-block w-100" style="padding-left: 15%;" alt="...">
+                <img src="./_img/feedback4.png" class="imgCarrossel d-block mw-100" style="padding-left: 15%;" alt="...">
               </div>
               <div class="col-md" >
-                <div class="alinhamentoCarrossel">
+                <div class="">
                   <p>O paciente procurou o acompanhamento com o objetivo de ganhar massa muscular. Em apenas 4 meses de trabalho, alcançamos um aumento de 4,5 kg de massa muscular, evidenciando uma evolução consistente e saudável.</p>
                   <h1>+ 4,5 kg</h1>
                   <img src="./_img/grafico4.png" style="max-height:120px;">
@@ -182,13 +182,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item px-5">
-            <div class="row">
+          <div class="carousel-item">
+            <div class="row alinhamentoCarrossel">
               <div class="col-md">
-                <img src="./_img/feedback5.png" class="d-block w-100" style="padding-left: 15%;" alt="...">
+                <img src="./_img/feedback5.png" class="imgCarrossel d-block mw-100" style="padding-left: 15%;" alt="...">
               </div>
               <div class="col-md" >
-                <div class="alinhamentoCarrossel">
+                <div class="">
                   <p>A paciente chegou ao acompanhamento com um bom percentual de massa muscular de 20%, desejando aprimorar a performance muscular. Durante o processo, alcançamos uma redução no percentual de gordura para 15%, favorecendo sua performance e composição corporal.</p>
                   <h1>15% Pm</h1>
                   <img src="./_img/grafico5.png" style="max-height:120px;">
@@ -261,7 +261,7 @@
           <div class="col-md-4 mb-3">
               <img src="./_img/prato (1).png" id="prato1" alt="foto" style="height: auto; z-index: 2; position: relative;">
               <div id="prato" style="text-align: right; margin-top: -30px; position: relative; z-index: 1;">
-                <a href="#sobre">
+                <a id="whatsapp-link" href="https://wa.me/<%= whatsappNumber %>">
                   <button class="button-5" role="button">
                     Agendar consulta
                     <img src="./_img/whatsbranco.png" alt="" id="xxx" style="height: 23px; padding-left: 10px;">
@@ -269,7 +269,7 @@
                 </a>
               </div>
               <div id="botaoCelular" style="text-align: right; margin-top: -30px; position: relative; z-index: 1;">
-                <a href="#sobre">
+                <a id="whatsapp-link" href="https://wa.me/<%= whatsappNumber %>">
                   <button class="button-5" role="button">
                     <img src="./_img/whatsbranco.png" alt="" id="xxx" style="height: 23px;">
                   </button>
@@ -279,7 +279,7 @@
         </div>
   </section>
 <!-- Primeira linha quem somos nos -->
-  <div class="" style="background-image: url(./_img/background.png); background-size: cover;">
+  <div class="" style="background-image: url(./_img/background.png); background-size: cover;" id="sobre">
     <div class="row alinhamentoQuem" >
       <section class="col-md-5 pt-5">
         <div id="imagemQuem">
@@ -329,7 +329,7 @@
   </div>
 
 <!-- Vantagens -->
-  <section class="pb-5" style="background-color:#FFEEEE">    
+  <section class="pb-5" style="background-color:#FFEEEE" id="vantagens">    
     <img src="./_img/academia.png" id="anilhas" alt="foto" style="width: 100%; max-width:300px; height: auto; position: absolute; left: -10%; margin-top: -5%;">
     <h1 class="PrimeiraFonte text-center fonteGigante" style="line-height: 80px; color: #590219; padding-top: 10vh;">Vantagens</h1>
     <div class="row">
@@ -388,7 +388,7 @@
                 </ul>
               </div>
               <div class="text-center pb-3 mt-auto">
-                <a href="#sobre">
+                <a href="https://wa.me/<%= whatsappNumber %>">
                   <button class="button-5" role="button" style="background-image: linear-gradient(to left, #E8D6B2, #DABE85); width: 80%;">Assine já</button>
                 </a>
               </div>
@@ -410,7 +410,7 @@
                 </ul>
               </div>
               <div class="text-center pb-3 mt-auto">
-                <a href="#sobre">
+                <a href="https://wa.me/<%= whatsappNumber %>">
                   <button class="button-5" role="button" style="width: 80%;">Assine já</button>
                 </a>
               </div>
