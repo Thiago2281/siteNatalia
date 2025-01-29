@@ -273,8 +273,8 @@ html, body {
 /* Ajuste para telas menores */
 @media (max-width: 576px) {
   .vertical-line-right {
-    height: 20vh; /* Altura reduzida em telas menores */
-    bottom: 29%; /* Começa na parte inferior da página */
+    height: 10vh; /* Altura reduzida em telas menores */
+    bottom: 49%; /* Começa na parte inferior da página */
   }
 }
 
@@ -382,6 +382,12 @@ html, body {
   line-height: 26px;
 }
 
+#fotoNatalia {
+
+  max-width:550px;
+  height: auto;
+}
+
 @media (max-width: 840px) {
   .fonteGigante {
     font-size: 45px;
@@ -392,10 +398,15 @@ html, body {
     line-height: 20px;
   }
   #tituloConstrua {
-    display: block
+    display: block;
+    margin-top: -10%;
   }
   #tituloConstrua1 {
     display: none
+  }
+  #fotoNatalia {
+    max-width:250px;
+    height: auto;
   }
   #botaoCelular {
     display: block
@@ -606,7 +617,7 @@ html, body {
 /* Ajustar para telas menores */
 @media (max-width: 850px) {
   .linhaVantagens {
-    bottom: 10%; /* Ajuste para telas menores */
+    bottom: 30%; /* Ajuste para telas menores */
     padding-left: 10%;
   }
 }
@@ -625,7 +636,7 @@ html, body {
     background-image: linear-gradient(to right, #590219 , #BF0436); /* Cor da linha */
     margin: 0 1rem; /* Espaçamento superior e inferior */
     position: absolute;
-    bottom: 9rem;
+    bottom: 17.5rem;
     opacity: 1;
   }
 }
