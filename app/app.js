@@ -3,7 +3,7 @@ const port = 3000
 const app = express()
 var bodyParser = require('body-parser')
 require('dotenv').config();
-const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+const apiKey = process.env.API_KEY;
 /* identificar dados passados na URL */
 app.use(bodyParser.urlencoded({ extended: false }))
 const whatsappNumber = process.env.WHATSAPP_NUMBER;
@@ -15,7 +15,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index', { googleMapsApiKey: apiKey, whatsappNumber: whatsappNumber });
+  res.render('index', { apiKey: apiKey, whatsappNumber: whatsappNumber });
 })
 
 app.listen(port, () => {
