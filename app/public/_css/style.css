@@ -276,6 +276,8 @@ html, body {
     height: 10vh; /* Altura reduzida em telas menores */
     bottom: 49%; /* Começa na parte inferior da página */
   }
+  
+
 }
 
 .image-container {
@@ -302,7 +304,7 @@ html, body {
   transform: scale(1.1); /* Ampliar ligeiramente no hover */
   background-color: rgba(255, 255, 255, 0.2); /* Realça o fundo */
 }
-@media (max-width: 576px) {
+@media (max-width: 840px) {
   .blur-button {
     display: none;
   }
@@ -320,12 +322,18 @@ html, body {
 .alinhamentoRoteiro {
   padding-top: 10vh;
 }
+#feedbacks {
+  padding-top: 2%;
+}
 @media (max-width: 840px) {
   .alinhamentoRoteiro {
     padding-top: 0vh;
   }
   #primeiraSecao {
-    padding-top: 10vh;
+    padding-top: 3vh;
+  }
+  #feedbacks {
+    padding-top: 0%;
   }
 }
 
@@ -383,15 +391,19 @@ html, body {
 }
 
 #fotoNatalia {
-
-  max-width:550px;
-  height: auto;
+  width: 550px; /* Tamanho padrão para notebooks */
 }
 
+/* Para celulares (largura máxima de 768px) */
+@media (max-width: 768px) {
+  #fotoNatalia {
+    width: 250px;
+  }
+}
 @media (max-width: 840px) {
   .fonteGigante {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 40px;
   }
   .fonteTexto{
     font-size: 20px;
@@ -403,10 +415,6 @@ html, body {
   }
   #tituloConstrua1 {
     display: none
-  }
-  #fotoNatalia {
-    max-width:250px;
-    height: auto;
   }
   #botaoCelular {
     display: block
@@ -610,15 +618,14 @@ html, body {
 }
 
 .linhaVantagens {
-  position: absolute;
-  bottom: -5vh; /* Posição padrão */
+  position: relative; /* Mantém no fluxo do documento */
+  transform: translateY(-30%); 
 }
 
 /* Ajustar para telas menores */
 @media (max-width: 850px) {
   .linhaVantagens {
-    bottom: 30%; /* Ajuste para telas menores */
-    padding-left: 10%;
+    transform: translateY();
   }
 }
 
