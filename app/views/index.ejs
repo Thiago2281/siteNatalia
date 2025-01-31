@@ -317,7 +317,11 @@
             <div class="col-md-12 pt-5">
               <h1 class="PrimeiraFonte fonteGigante" style="line-height: 80px; color: #590219"> O local</h1>
               <p class="fonteQuem">Nosso espaço combina conforto, praticidade e modernidade. Com equipamentos avançados e uma estrutura acolhedora, garantimos uma experiência positiva e inspiradora.</p>
-              <a href="#mapa" style="text-decoration: none"><p class="fonteQuem"><img src="./_img/localizacao.png" alt="foto" style="max-width:50px;">Confira nossa localização</p>
+              <a href="#mapa" onclick="mostrarMapa(event)" style="text-decoration: none">
+                <p class="fonteQuem">
+                  <img src="./_img/localizacao.png" alt="foto" style="max-width:50px;">
+                  Confira nossa localização
+                </p>
               </a>
             </div>
           </div>
@@ -334,7 +338,7 @@
   <section class="pb-5" style="background-color:#FFEEEE" id="vantagens">    
     <img src="./_img/academia.png" id="anilhas" alt="foto" style="width: 100%; max-width:300px; height: auto; position: absolute; left: -10%; margin-top: -5%;">
     <h1 class="PrimeiraFonte text-center fonteGigante" style="line-height: 80px; color: #590219; padding-top: 10vh;">Vantagens</h1>
-    <div class="row">
+    <div class="row d-flex justify-content-center ">
       <div class="col-6 card vantagensCard" id="larguraCards">
         <div class="card-body"> 
           <img src="./_img/celular.png" alt="foto" id="celular">
@@ -421,15 +425,11 @@
         </div>
       </div>
       
-      <div class="mt-5 text-center pt-5" style="font-size: 24px; color: #590219; font-weight: 200; " id="mapa">
+      <div class="mt-5 text-center pt-5" style="font-size: 24px; color: #590219; font-weight: 200" >
         <p class="pt-2">Confira nossas outras opções de planos através do WhatsApp</p>
       </div>
 
       <div id="carouselExampleIndicators" class="carousel carousel-dark slide" >
-        <!-- <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div> -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class=" text-center pt-5" style="font-size: 24px; color: #590219; font-weight: 200; ">
@@ -437,7 +437,7 @@
               <p class="" >"Sua saúde bem acompanhada"</p>
             </div>
           </div>
-          <div class="carousel-item" >
+          <div class="carousel-item"  id="mapa" >
             <div class="d-flex justify-content-center align-items-center" style="height: 90%;">
               <gmp-map
                 center="-3.7419567456677076, -38.499893822091394"
@@ -481,6 +481,21 @@
 
   <script
     src="https://maps.googleapis.com/maps/api/js?key=<%= apiKey %>&loading=async&libraries=maps&v=beta" defer>
+  </script>
+
+  <script>
+    function mostrarMapa(event) {
+      event.preventDefault(); // Impede o comportamento padrão do link
+
+      // Ativa o slide do mapa no carrossel
+      var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'));
+      carousel.to(1); // Muda para o slide com índice 1 (o do mapa)
+
+      // Aguarda um tempo para a transição do carrossel e então faz o scroll
+      setTimeout(() => {
+        document.getElementById('mapa').scrollIntoView({ behavior: 'smooth' });
+      }, 500); // Tempo ajustado para garantir que o slide foi ativado
+    }
   </script>
 
 

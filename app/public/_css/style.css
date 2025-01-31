@@ -496,8 +496,14 @@ html, body {
   border-radius: 10%; 
   border: none; 
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-  max-width: 14rem;
+  max-width: 18rem;
   margin-right: 20px;
+}
+/* Reduz o max-width para 14rem em telas 4K (largura >= 3840px) */
+@media screen and (min-width: 3840px) {
+  .vantagensCard {
+    max-width: 14rem;
+  }
 }
 #larguraCards2 {
   margin-top: 10vh;
