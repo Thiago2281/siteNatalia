@@ -381,8 +381,8 @@ html, body {
 }
 
 .fonteGigante {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 64px;
+  line-height: 64px;
 }
 
 .fonteTexto{
@@ -496,7 +496,7 @@ html, body {
   border-radius: 10%; 
   border: none; 
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-  max-width: 18rem;
+  max-width: 14rem;
   margin-right: 20px;
 }
 #larguraCards2 {
@@ -504,11 +504,11 @@ html, body {
 }
 
 .cardTitulo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 .cardTexto {
-  font-size: 20px; 
+  font-size: 18px; 
   font-weight:300
 }
 
