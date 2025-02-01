@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <!-- main image & intro text -->
@@ -53,10 +53,10 @@
     <div class="vertical-line"></div> 
     <div class="vertical-line-right" id="prato"></div>
     <div class="row">
-      <section id="inicio" class="col-md-6 order-3 order-lg-1" >
+      <section id="inicio" class="col-sm-6 order-3 order-lg-1" >
         <div >
           <div class="row align-items-start" id="primeiraSecao">
-            <div class="col-md-12 alinhamentoBasico">
+            <div class="col-sm-12 alinhamentoBasico">
               <h1 class="mt-5 PrimeiraFonte fonteGigante" id="tituloConstrua1" style="color: #590219"> Construa <span style="color:#DABE85;">a sua</span><br>
                 melhor versão<br></h1>
               <h1 class="PrimeiraFonte fonteGigante" id="tituloConstrua" style="color: #590219;">Construa <span style="color:#DABE85;"> a sua</span> melhor versão<br></h1>
@@ -70,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="col-md-6 order-1 order-lg-2 d-flex justify-content-center align-items-center" >
+      <section class="col order-1 order-lg-2 d-flex justify-content-center align-items-center" >
         <div class="pt-3">
           <button class="blur-button" style="bottom: 20%; left: 55%;"></button>
           <img src="./_img/nataliacampos (1).png" id="fotoNatalia" alt="foto">
@@ -115,15 +115,17 @@
     
   </div>
   <section style="background-color:#FFEEEE;" id="feedbacks">    
-    <div class="" >
-      <div class="row ">
-        <div class="col-md-3"></div>
-        <div class="text-center col-lg-6">
-          <p class="mt-5 PrimeiraFonte fonteGigante" style="color: #590219;">Feed<span style="color: #DABE85">backs</span></p>
-          <p class="fonteTexto" style="color: #590219;">Transforme sua vida como nossos pacientes! Descubra histórias reais de sucesso com nossa metodologia.</p>
+      <div class="d-flex justify-content-center align-items-center text-center">
+        <div class="col-lg-6">
+          <p class="mt-5 PrimeiraFonte fonteGigante" style="color: #590219;">
+            Feed<span style="color: #DABE85">backs</span>
+          </p>
+          <p class="fonteTexto" style="color: #590219;">
+            Transforme sua vida como nossos pacientes! Descubra histórias reais de sucesso com nossa metodologia.
+          </p>
         </div>
-        <div class="col-md-3"></div>
       </div>
+
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div id="myCarrousel" class="carousel-inner" style="color: #590219;">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -133,7 +135,7 @@
               </div>
               <div class="col-md">
                 <div class="">
-                  <p>O paciente buscou Acompanhamento como o objetivo de mudar seus hábitos de vida, relatando indisposição. Começou com um peso inicial de 134kg. Com o acompanhamento contínuo, houve um aumento na massa magra e redução da gordura corporal, atingindo 117kg.</p>
+                  <p>O paciente buscou acompanhamento como o objetivo de mudar seus hábitos de vida, relatando indisposição. Começou com um peso inicial de 134kg. Com o acompanhamento contínuo, houve um aumento na massa magra e redução da gordura corporal, atingindo 117kg.</p>
                   <h1>-17,3 kg</h1>
                   <img src="./_img/grafico1.png" style="max-height:120px;">
                 </div>
@@ -206,7 +208,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
   </section>
 
   <section id="roteiroMudanca" style="background-color: #FFEEEE;">    
@@ -219,7 +220,7 @@
             </h1>
           </div>
           <!-- Coluna Direita com os Botões -->
-          <div class="col-md-6 alinhamentoRoteiro">
+          <div class="col-md-6 alinhamentoRoteiro ">
             <div class="row no-wrap">
               <!-- Primeira linha com 3 botões -->
               <div class="col-md-4 mb-3 me-5">
@@ -282,8 +283,8 @@
   <div class="" style="background-image: url(./_img/background.png); background-size: cover;" id="sobre">
     <div class="row alinhamentoQuem" >
       <section class="col-md-5 pt-5">
-        <div id="imagemQuem">
-          <img src="./_img/Natália 2.png" alt="foto" style="height: 100%;">
+        <div>
+          <img src="./_img/Natália 2.png" id="imagemQuem" alt="foto">
         </div>
       </section>
       <section class="col-md-5" >
@@ -327,40 +328,40 @@
           </div>
       </section>
       <section class="col-md-5 mb-5 pt-3">
-        <div id="imagemQuem">
-          <img src="./_img/Local.png" alt="foto" style="height: 100%; max-height: 450px;">
+        <div >
+          <img src="./_img/Local.png" id="imagemQuem" alt="foto" style="max-height: 450px;">
         </div>
       </section>
     </div>
   </div>
 
 <!-- Vantagens -->
-  <section class="pb-5" style="background-color:#FFEEEE" id="vantagens">    
+  <div class="pb-5" style="background-color:#FFEEEE" id="vantagens">    
     <img src="./_img/academia.png" id="anilhas" alt="foto" style="width: 100%; max-width:300px; height: auto; position: absolute; left: -10%; margin-top: -5%;">
     <h1 class="PrimeiraFonte text-center fonteGigante" style="line-height: 80px; color: #590219; padding-top: 10vh;">Vantagens</h1>
     <div class="row d-flex justify-content-center ">
-      <div class="col-6 card vantagensCard" id="larguraCards">
+      <div class="col-6 col-sm-4 card vantagensCard" id="larguraCards">
         <div class="card-body"> 
           <img src="./_img/celular.png" alt="foto" id="celular">
           <h5 class="text-white cardTitulo">App Exclusivo </h5>
           <p class="text-white cardTexto">Ferramentas digitais para facilitar sua jornada e impulsionar seus resultados.</p>
         </div>
       </div>
-      <div class="col-6 card vantagensCard" id="larguraCards2">
+      <div class="col-6 col-sm-4 card vantagensCard" id="larguraCards2">
         <div class="card-body">
           <img src="./_img/panela.png" alt="foto" id="panela">
           <h5 class="card-text text-white cardTitulo">Plano nutricional</h5>
           <p class="card-text text-white cardTexto">Dieta estratégica e personalizada para otimizar seu processo e alcançar seus objetivos.</p>
         </div>
       </div>
-      <div class="col-6 card vantagensCard" id="larguraCards2">
+      <div class="col-6 col-sm-4 card vantagensCard" id="larguraCards2">
         <div class="card-body">
           <img src="./_img/suporte.png" alt="foto" id="suporte">
           <h5 class="card-text text-white cardTitulo">Suporte Contínuo</h5>
           <p class="card-text text-white cardTexto">Acompanhamento próximo e especializado com ajustes precisos e motivação constante.</p>
         </div>
       </div>
-      <div class="col-6 card vantagensCard" id="larguraCards">
+      <div class="col-6 col-sm-4 card vantagensCard" id="larguraCards">
         <div class="card-body">
           <img src="./_img/anilha.png" alt="foto" id="suporte">
           <h5 class="card-text text-white cardTitulo" >Resultados reais!</h5>
@@ -369,7 +370,7 @@
       </div>
     </div>
     <img src="./_img/prancheta.png" id="anilhas" alt="foto" style="width: 100%; max-width:200px; height: auto; position: absolute; right: -5%; margin-top: -15%;">
-  </section>
+  </div>
 
    
   <div style="background-image: url(./_img/background.png); background-size: cover;">

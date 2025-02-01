@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .nav-item {
   position: relative;
   padding: 10px 20px; /* Ajuste para garantir espaço interno */
@@ -303,15 +296,10 @@ html, body {
   border-radius: 10%; 
   border: none; 
   box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-  max-width: 18rem;
+  max-width: 20%;
   margin-right: 20px;
 }
-/* Reduz o max-width para 14rem em telas 4K (largura >= 3840px) */
-@media screen and (min-width: 3840px) {
-  .vantagensCard {
-    max-width: 14rem;
-  }
-}
+
 #larguraCards2 {
   margin-top: 10vh;
 }
@@ -463,7 +451,7 @@ html, body {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
+  min-width: 150px;
   pointer-events: none; /* Desativa todas as interações do mouse */
 }
 
@@ -511,24 +499,46 @@ html, body {
     padding-left: 0;
   }
 }
-@media (max-width: 1024px) and (min-width:768px) {
+@media (min-width:767px) and (max-width: 1025px) {
   #fotoNatalia {
-    width: 350px;
-    margin-left: 50%;
+    max-width: 550px; 
+    height: 100%;
+    
   }
-  #tituloConstrua {
+  #tituloConstrua1 {
     display: block;
     margin-top: -10%;
   }
-  #tituloConstrua1 {
+  #tituloConstrua {
     display: none
+  }
+  .linhaVantagens {
+    position: relative; /* Mantém no fluxo do documento */
+    transform: translateY(0%); 
+  }
+  .alinhamentoBasico {
+    padding-left: 8vh;
+  }
+  .fonteGigante {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .fonteTexto{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  section {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+  #imagemQuem {
+    margin-left: 0vh;
+    max-height: 350px;
+    height: 90%;
   }
 }
 /* Ajuste para telas menores */
-@media (max-width: 768px) {
-  #logo {
-    width: 250px; /* Largura reduzida para telas menores */
-  }
+@media (max-width: 767px) {
   #fotoNatalia {
       width: 250px;
     }
@@ -539,7 +549,11 @@ html, body {
   #inicio {
     padding-left: 0vh; /* Ajuste para telas de celular */
   }
-
+}
+@media (max-width: 992px) {
+  #prato {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -568,7 +582,7 @@ html, body {
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 768px) {
   .blur-button {
     display: none;
   }
@@ -577,6 +591,7 @@ html, body {
   }
   .alinhamentoRoteiro {
     padding-top: 0vh;
+    overflow: scroll;
   }
   #primeiraSecao {
     padding-top: 3vh;
@@ -644,11 +659,8 @@ html, body {
   }
   #imagemQuem {
     margin-left: 0vh;
-    max-height: 350px;
-  }
-  #imagemQuem1 {
-    margin-left: 10vh;
-    max-height: 350px;
+    height: 100%;
+    max-width: 90%;
   }
   #figurinhasBotao {
     height: 20px; 
@@ -672,11 +684,11 @@ html, body {
   }  
   .vantagensCard {
     background-image: linear-gradient(to bottom left, #E8D6B2, #DABE85); 
-    width: 45%;
+    width: 40%;
     border-radius: 10%;
     border: none; 
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 18rem;
+    max-width: 16rem;
     margin: 0px;
     padding: 0px;
   }
